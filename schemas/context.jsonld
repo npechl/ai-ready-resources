@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "air": "https://example.org/embl-ebi/ai-readiness/vocab#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "AssessmentCriterion": "air:AssessmentCriterion",
+    "AssessmentObject": "air:AssessmentObject",
+    "Principle": "air:Principle",
+    "id": "@id",
+    "type": "@type",
+    "identifier": "dcterms:identifier",
+    "name": "skos:prefLabel",
+    "description": "skos:definition",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "principle": {
+      "@id": "dqv:inDimension",
+      "@type": "@id"
+    },
+    "requirement": "skos:definition",
+    "requirementLevel": "air:requirementLevel",
+    "howToAssess": "air:howToAssess",
+    "assessmentObject": {
+      "@id": "air:assessmentObject",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "assessedBy": {
+      "@reverse": "air:assessmentObject",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "assessmentObjectLabel": "air:assessmentObjectLabel",
+    "exampleScope": "air:exampleScope",
+    "applicability": "air:applicability",
+    "evidence": {
+      "@id": "air:evidence",
+      "@container": "@list"
+    },
+    "sharesEvidenceWith": {
+      "@id": "air:sharesEvidenceWith",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "assessmentFrequency": "air:assessmentFrequency",
+    "relatedStandard": {
+      "@id": "air:relatedStandard",
+      "@container": "@set"
+    },
+    "goodExample": "air:goodExample",
+    "poorExample": "air:poorExample",
+    "hasCriterion": {
+      "@id": "air:hasCriterion",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasTopConcept": {
+      "@id": "skos:hasTopConcept",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  }
+}

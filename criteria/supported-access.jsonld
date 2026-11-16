@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/supported-access",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "supported-access",
+  "name": "Supported access",
+  "inScheme": "scheme",
+  "principle": "principle/accessibility",
+  "requirement": "Every supported way of accessing the data must be listed, with what it covers, its version, who it is for and whether it is actively supported.",
+  "requirementLevel": "must",
+  "howToAssess": "Try each documented access route by following the published instructions.",
+  "assessmentObjectLabel": "Resource/interface",
+  "assessmentObject": [
+    "object/resource",
+    "object/interface-access-route"
+  ],
+  "applicability": "All resources.",
+  "evidence": [
+    "Table of access routes",
+    "documentation",
+    "record of a successful test"
+  ],
+  "assessmentFrequency": "Quarterly and after interface change",
+  "relatedStandard": [
+    "RDA FAIR indicators"
+  ],
+  "goodExample": "An access table lists \"REST API v2 (supported), FTP bulk files (supported), SPARQL (beta, best effort)\", each with a link to instructions.",
+  "poorExample": "An old endpoint still works, but nobody knows whether it is maintained."
+}

@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/processing-lineage",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "processing-lineage",
+  "name": "Processing lineage",
+  "inScheme": "scheme",
+  "principle": "principle/provenance",
+  "requirement": "Derived values must be traceable through each processing step back to their source inputs.",
+  "requirementLevel": "must",
+  "howToAssess": "Pick typical derived records and rebuild their history across the workflow steps.",
+  "assessmentObjectLabel": "Derived values",
+  "assessmentObject": [
+    "object/derived-value"
+  ],
+  "applicability": "All derived values.",
+  "evidence": [
+    "Provenance graph/records",
+    "workflow run IDs",
+    "lists of input/output files",
+    "records of which steps ran and who/what ran them"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/derivation-definitions"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "W3C PROV-O",
+    "RO-Crate"
+  ]
+}

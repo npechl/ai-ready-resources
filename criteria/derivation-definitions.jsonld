@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/derivation-definitions",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "derivation-definitions",
+  "name": "Derivation definitions",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-clarity",
+  "requirement": "Derived (calculated) fields must state their inputs, method, parameters and how to interpret the result.",
+  "requirementLevel": "must",
+  "howToAssess": "Pick a sample of derived fields. Check that their meaning and calculation can be worked out from the documentation and provenance.",
+  "assessmentObjectLabel": "Derived fields",
+  "assessmentObject": [
+    "object/field"
+  ],
+  "applicability": "N/A only when no derived fields are distributed.",
+  "evidence": [
+    "Formula/algorithm description",
+    "list of parameters",
+    "which source fields are used",
+    "worked example"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/processing-lineage"
+  ],
+  "assessmentFrequency": "Per algorithm/schema change"
+}

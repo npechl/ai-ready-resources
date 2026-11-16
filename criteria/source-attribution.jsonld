@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/source-attribution",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "source-attribution",
+  "name": "Source attribution",
+  "inScheme": "scheme",
+  "principle": "principle/provenance",
+  "requirement": "Every imported value or claim must record where it came from, as precisely as is practical.",
+  "requirementLevel": "must",
+  "howToAssess": "Take sample records from each type of source. Trace each value back to its source record, publication or submission.",
+  "assessmentObjectLabel": "Records/assertions",
+  "assessmentObject": [
+    "object/record",
+    "object/assertion"
+  ],
+  "applicability": "All data not created by the resource itself, and all claims supported by outside sources.",
+  "evidence": [
+    "Source fields",
+    "accession/citation",
+    "import manifest",
+    "results of tracing a sample"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "W3C PROV-O"
+  ],
+  "goodExample": "GO annotation files record who made each annotation (assigned_by) and the supporting reference.",
+  "poorExample": "Imported values have no record of which source they came from."
+}

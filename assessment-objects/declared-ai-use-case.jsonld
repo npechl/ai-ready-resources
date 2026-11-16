@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/declared-ai-use-case",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "declared-ai-use-case",
+  "name": "Declared AI use case",
+  "inScheme": "assessment-objects",
+  "description": "The particular AI task and operating context against which readiness is judged. It is not a technical component of the resource.",
+  "exampleScope": "RAG, model training or automated classification",
+  "assessedBy": [
+    "criterion/ai-use-risk-and-harm-analysis"
+  ]
+}

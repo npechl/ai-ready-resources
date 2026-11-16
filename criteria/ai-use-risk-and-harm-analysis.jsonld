@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/ai-use-risk-and-harm-analysis",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "ai-use-risk-and-harm-analysis",
+  "name": "AI-use risk and harm analysis",
+  "inScheme": "scheme",
+  "principle": "principle/governance-legal-and-ethics",
+  "requirement": "Serious harms, ways the data could be misused, and groups that could be affected must be assessed for the declared AI use case.",
+  "requirementLevel": "must",
+  "howToAssess": "Run a structured risk review covering scientific validity, discrimination, privacy, security, dual use and automation that could mislead.",
+  "assessmentObjectLabel": "Declared AI use case",
+  "assessmentObject": [
+    "object/declared-ai-use-case"
+  ],
+  "applicability": "Every claim of AI readiness. The depth of review should match the level of risk.",
+  "evidence": [
+    "Risk register",
+    "statement of misuse/unsuitable uses",
+    "actions taken to reduce risk",
+    "approval record"
+  ],
+  "assessmentFrequency": "At least annually and on use-case change",
+  "goodExample": "A short risk register for the declared use case: misuse scenarios, affected groups, mitigations and sign-off.",
+  "poorExample": "An \"AI-ready\" label with no assessment of how the data could mislead or cause harm."
+}

@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/mapping",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "mapping",
+  "name": "Mapping",
+  "inScheme": "assessment-objects",
+  "description": "An explicit relationship between fields, schemas, identifiers or ontology concepts.",
+  "exampleScope": "Local term mapped to an ontology term",
+  "assessedBy": [
+    "criterion/mapping-semantics-and-provenance"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/completeness",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "completeness",
+  "name": "Completeness",
+  "inScheme": "scheme",
+  "principle": "principle/quality",
+  "requirement": "Completeness must be measured for every required field and every field that matters for AI use.",
+  "requirementLevel": "must",
+  "howToAssess": "For each field, count how many values are missing, blank or invalid. Break the counts down by record type or source where this is relevant.",
+  "assessmentObjectLabel": "Fields/records",
+  "assessmentObject": [
+    "object/field",
+    "object/record"
+  ],
+  "applicability": "All tabular or record-oriented distributions.",
+  "evidence": [
+    "Completeness report per field",
+    "which fields the schema marks as required or optional",
+    "how the breakdown was defined"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/contextual-metadata"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "W3C DQV",
+    "MLCommons Croissant"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/missing-and-null-semantics",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "missing-and-null-semantics",
+  "name": "Missing and null semantics",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-clarity",
+  "requirement": "Where it changes how the data should be read, it must be possible to tell apart values that are missing, unknown, not applicable, withheld or a real zero.",
+  "requirementLevel": "must",
+  "howToAssess": "Check the schema and a sample of records for each allowed kind of missing value.",
+  "assessmentObjectLabel": "Fields",
+  "assessmentObject": [
+    "object/field"
+  ],
+  "applicability": "All fields that can be empty or use placeholder values.",
+  "evidence": [
+    "Policy for missing values",
+    "schema rules",
+    "examples",
+    "validation rules"
+  ],
+  "assessmentFrequency": "Per schema change",
+  "goodExample": "Different codes for \"not measured\", \"not applicable\", \"withheld\" and a real 0.",
+  "poorExample": "Blank, \"NA\", \"-\" and 0 all used to mean \"no value\"."
+}

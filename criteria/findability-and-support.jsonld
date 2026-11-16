@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/findability-and-support",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "findability-and-support",
+  "name": "Findability and support",
+  "inScheme": "scheme",
+  "principle": "principle/documentation",
+  "requirement": "Core documentation should be searchable and linked from the resource's main page, and there should be a maintained way to get help.",
+  "requirementLevel": "should",
+  "howToAssess": "Starting from the main landing page, try to find the schema, data dictionary, release notes, licence, help contact and service status.",
+  "assessmentObjectLabel": "Documentation/support",
+  "assessmentObject": [
+    "object/documentation-set",
+    "object/support"
+  ],
+  "applicability": "All resources.",
+  "evidence": [
+    "Map of where each document is linked",
+    "search test",
+    "help contact",
+    "dates when documents were last reviewed"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/monitoring-and-reliability",
+    "criterion/issue-correction-and-appeal-route"
+  ],
+  "assessmentFrequency": "Quarterly",
+  "relatedStandard": [
+    "W3C Data"
+  ],
+  "goodExample": "The landing page links to the schema, data dictionary, release notes, licence, status page and help desk.",
+  "poorExample": "The data dictionary exists but can only be reached from an old wiki page."
+}

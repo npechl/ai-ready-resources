@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/typed-values",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "typed-values",
+  "name": "Typed values",
+  "inScheme": "scheme",
+  "principle": "principle/machine-actionability",
+  "requirement": "Values must have stable datatypes and a structured form, so software does not have to extract them from text written for people.",
+  "requirementLevel": "must",
+  "howToAssess": "Review the schema and a sample of records for dates, numbers, true/false values, lists, identifiers and coded values.",
+  "assessmentObjectLabel": "Fields",
+  "assessmentObject": [
+    "object/field"
+  ],
+  "applicability": "All AI-relevant fields.",
+  "evidence": [
+    "Schema",
+    "data dictionary",
+    "results of the sample check"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/validation",
+    "criterion/schema-conformance"
+  ],
+  "assessmentFrequency": "Per schema change",
+  "relatedStandard": [
+    "W3C Data"
+  ],
+  "goodExample": "Dates as ISO 8601 (\"2026-10-09\"), numbers as numbers, lists as arrays.",
+  "poorExample": "A free-text field like \"approx. 12th Jan 2023, 3 replicates\" that a program would have to parse."
+}

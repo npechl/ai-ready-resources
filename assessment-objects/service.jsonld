@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/service",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "service",
+  "name": "Service",
+  "inScheme": "assessment-objects",
+  "description": "The deployed operational system delivering an interface. Service assessment covers availability, latency, monitoring and recovery.",
+  "exampleScope": "Production API deployment",
+  "assessedBy": [
+    "criterion/access-controls-and-limits",
+    "criterion/capacity-and-scalability",
+    "criterion/monitoring-and-reliability",
+    "criterion/recovery-and-continuity",
+    "criterion/sensitivity-and-access-review",
+    "criterion/issue-correction-and-appeal-route"
+  ]
+}

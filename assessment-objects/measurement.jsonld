@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/measurement",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "measurement",
+  "name": "Measurement",
+  "inScheme": "assessment-objects",
+  "description": "An observed quantitative or qualitative result, including its unit, precision and uncertainty.",
+  "exampleScope": "Expression level or binding affinity",
+  "assessedBy": [
+    "criterion/uncertainty",
+    "criterion/units-and-scales"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/identifier",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "identifier",
+  "name": "Identifier",
+  "inScheme": "assessment-objects",
+  "description": "A code used to identify a resource, entity or record. Assessment covers syntax, namespace, persistence and resolution.",
+  "exampleScope": "Accession, DOI or CURIE",
+  "assessedBy": [
+    "criterion/identifier-namespaces"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/access-controls-and-limits",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "access-controls-and-limits",
+  "name": "Access controls and limits",
+  "inScheme": "scheme",
+  "principle": "principle/accessibility",
+  "requirement": "Authentication, authorisation, rate limits, quotas and usage restrictions must be clearly stated and, where they apply, detectable by software.",
+  "requirementLevel": "must",
+  "howToAssess": "Test access without authentication and with authentication, with insufficient permissions, and above the quota/rate limit. Check that each case returns a clear response.",
+  "assessmentObjectLabel": "API/service",
+  "assessmentObject": [
+    "object/api",
+    "object/service"
+  ],
+  "applicability": "All access routes. If no authentication or quotas apply, say so explicitly.",
+  "evidence": [
+    "Access policy",
+    "examples of status/error responses",
+    "rate-limit headers or equivalent",
+    "test log"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/machine-readable-api-specification"
+  ],
+  "assessmentFrequency": "Annually, and after any change to the access policy",
+  "goodExample": "The docs say \"anonymous: 200 requests/min; above the limit you get HTTP error with a retry header\".",
+  "poorExample": "Users that send too many requests are silently blocked or get empty results."
+}

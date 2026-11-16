@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "principle/quality",
+  "type": [
+    "Principle",
+    "dqv:Dimension",
+    "skos:Concept"
+  ],
+  "identifier": "quality",
+  "name": "Quality",
+  "inScheme": "principles",
+  "hasCriterion": [
+    "criterion/validation",
+    "criterion/completeness",
+    "criterion/duplicates",
+    "criterion/label-quality",
+    "criterion/uncertainty",
+    "criterion/representativeness",
+    "criterion/intended-use-and-known-limitations"
+  ]
+}

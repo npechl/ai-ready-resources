@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/record",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "record",
+  "name": "Record",
+  "inScheme": "assessment-objects",
+  "description": "A single distributed entry, document, row or structured record.",
+  "exampleScope": "One protein, study, sample or structure record",
+  "assessedBy": [
+    "criterion/completeness",
+    "criterion/duplicates",
+    "criterion/contextual-metadata",
+    "criterion/source-attribution",
+    "criterion/citation-and-attribution",
+    "criterion/licence-clarity",
+    "criterion/use-restrictions"
+  ]
+}

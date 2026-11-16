@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/label-annotation",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "label-annotation",
+  "name": "Label / annotation",
+  "inScheme": "assessment-objects",
+  "description": "A category, classification or interpretation attached to an entity, often used as an AI target or ground truth.",
+  "exampleScope": "Functional annotation or phenotype label",
+  "assessedBy": [
+    "criterion/label-quality"
+  ]
+}

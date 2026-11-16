@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/environment-capture",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "environment-capture",
+  "name": "Environment capture",
+  "inScheme": "scheme",
+  "principle": "principle/infrastructure",
+  "requirement": "For production processing, the software versions, reference datasets and settings used must be recorded.",
+  "requirementLevel": "must",
+  "howToAssess": "Rebuild one typical processing step using only the recorded environment and reference data.",
+  "assessmentObjectLabel": "Runtime/dependencies",
+  "assessmentObject": [
+    "object/runtime-dependencies"
+  ],
+  "applicability": "All computed/processed resources.",
+  "evidence": [
+    "Container digest/lockfile",
+    "configuration files",
+    "reference-data versions",
+    "hardware notes where they affect results"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/reproduction-test"
+  ],
+  "assessmentFrequency": "Per release",
+  "goodExample": "Each step runs in a container identified by digest (e.g. a BioContainers image), with reference-data versions in a lockfile.",
+  "poorExample": "\"It works on our cluster\", with no record of tool versions."
+}

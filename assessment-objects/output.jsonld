@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/output",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "output",
+  "name": "Output",
+  "inScheme": "assessment-objects",
+  "description": "An artefact produced by a pipeline or service. It may be compared with expected output during reproducibility testing.",
+  "exampleScope": "Generated dataset, index or validation report",
+  "assessedBy": [
+    "criterion/reproduction-test"
+  ]
+}

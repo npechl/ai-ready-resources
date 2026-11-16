@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/vocabulary-versioning",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "vocabulary-versioning",
+  "name": "Vocabulary versioning",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-interoperability",
+  "requirement": "Every vocabulary and ontology the resource depends on must be identified by an identifier that can be looked up, plus a version/date.",
+  "requirementLevel": "must",
+  "howToAssess": "Check schemas, manifests and mappings for vocabulary versions, and confirm that each declared version can be found.",
+  "assessmentObjectLabel": "Vocabularies/ontologies",
+  "assessmentObject": [
+    "object/vocabulary-ontology"
+  ],
+  "applicability": "Whenever external or local vocabularies are used.",
+  "evidence": [
+    "List of vocabulary dependencies",
+    "ontology/vocabulary URIs",
+    "release dates"
+  ],
+  "assessmentFrequency": "Per dependency update",
+  "goodExample": "The release manifest states which ontology version was used (e.g. the EFO release version as listed in OLS).",
+  "poorExample": "Terms are used without a version, so obsolete terms cannot be detected."
+}

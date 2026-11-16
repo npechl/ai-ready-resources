@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/documentation-set",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "documentation-set",
+  "name": "Documentation set",
+  "inScheme": "assessment-objects",
+  "description": "The complete controlled documentation required to interpret and use the assessed component.",
+  "exampleScope": "Data dictionary, API guide, release notes and limitations",
+  "assessedBy": [
+    "criterion/documentation-versioning",
+    "criterion/findability-and-support"
+  ]
+}

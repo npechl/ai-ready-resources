@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/version-controlled-pipelines",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "version-controlled-pipelines",
+  "name": "Version-controlled pipelines",
+  "inScheme": "scheme",
+  "principle": "principle/infrastructure",
+  "requirement": "Production data processing must be done by code or workflows kept under version control.",
+  "requirementLevel": "must",
+  "howToAssess": "For a sample of outputs, trace each processing step back to a commit/tag in a repository and its workflow definition.",
+  "assessmentObjectLabel": "Pipeline",
+  "assessmentObject": [
+    "object/pipeline-workflow"
+  ],
+  "applicability": "All resources that process or derive data. N/A only for resources that distribute deposits unchanged.",
+  "evidence": [
+    "Repository/tag",
+    "workflow files",
+    "build/release record",
+    "record of change reviews"
+  ],
+  "assessmentFrequency": "Per release",
+  "goodExample": "Processing runs from a tagged release of a Nextflow/nf-core pipeline in Git, and the tag is recorded in the release notes.",
+  "poorExample": "Scripts live on one person's laptop and are edited between releases."
+}

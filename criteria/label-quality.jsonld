@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/label-quality",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "label-quality",
+  "name": "Label quality",
+  "inScheme": "scheme",
+  "principle": "principle/quality",
+  "requirement": "Labels used to train or evaluate AI, or used as reference annotations, must have documented quality checks.",
+  "requirementLevel": "must",
+  "howToAssess": "Review the annotation guidelines. Check a representative sample that was annotated twice or reviewed independently.",
+  "assessmentObjectLabel": "Labels/annotations; Fields",
+  "assessmentObject": [
+    "object/label-annotation",
+    "object/field"
+  ],
+  "applicability": "N/A when the resource has no labels or annotations meant for these uses.",
+  "evidence": [
+    "Annotation guidelines",
+    "sampling plan",
+    "agreement or accuracy scores",
+    "record of how disagreements were resolved"
+  ],
+  "assessmentFrequency": "Per release, when the guidelines change, and at least annually",
+  "relatedStandard": [
+    "W3C DQV",
+    "AI-readiness Criteria for Biomedical Data"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/long-term-access",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "long-term-access",
+  "name": "Long-term access",
+  "inScheme": "scheme",
+  "principle": "principle/accessibility",
+  "requirement": "The resource must explain how cited releases, records and metadata stay accessible after they are updated or retired.",
+  "requirementLevel": "must",
+  "howToAssess": "Look up a sample of current, replaced and retired identifiers/releases and check what each one returns.",
+  "assessmentObjectLabel": "Release/archive",
+  "assessmentObject": [
+    "object/release",
+    "object/storage"
+  ],
+  "applicability": "All citable resources.",
+  "evidence": [
+    "Preservation policy",
+    "archive of past versions",
+    "examples of tombstone pages/redirects for retired records"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/release-immutability",
+    "criterion/retention-and-deletion"
+  ],
+  "assessmentFrequency": "Annually",
+  "relatedStandard": [
+    "RDA FAIR indicators",
+    "Identifiers.org"
+  ],
+  "goodExample": "Ensembl keeps archive websites for past releases, so a cited release can still be browsed.",
+  "poorExample": "Old releases are deleted and their identifiers return 404 (not sure about that)."
+}

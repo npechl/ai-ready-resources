@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/units-and-scales",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "units-and-scales",
+  "name": "Units and scales",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-clarity",
+  "requirement": "Numeric measurements must state their unit, scale, precision and any transformation applied, where relevant.",
+  "requirementLevel": "must",
+  "howToAssess": "List all numeric measurement fields. Check that units are stated in the records or schema, and that any conversions are correct.",
+  "assessmentObjectLabel": "Measurements",
+  "assessmentObject": [
+    "object/measurement"
+  ],
+  "applicability": "N/A for values without units or for categories, but fields without units must say so explicitly.",
+  "evidence": [
+    "Unit declarations",
+    "data dictionary",
+    "report checking units against the declarations"
+  ],
+  "assessmentFrequency": "Per schema change",
+  "relatedStandard": [
+    "QUDT"
+  ]
+}

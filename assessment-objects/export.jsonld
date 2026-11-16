@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/export",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "export",
+  "name": "Export",
+  "inScheme": "assessment-objects",
+  "description": "A representation of resource data produced for distribution. It may comprise multiple files.",
+  "exampleScope": "Public JSON export or RDF distribution",
+  "assessedBy": [
+    "criterion/standard-export-profile",
+    "criterion/portable-provenance"
+  ]
+}

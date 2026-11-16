@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/sensitivity-and-access-review",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "sensitivity-and-access-review",
+  "name": "Sensitivity and access review",
+  "inScheme": "scheme",
+  "principle": "principle/governance-legal-and-ethics",
+  "requirement": "Personal, sensitive or controlled data must have an approved classification and a review of who can access it.",
+  "requirementLevel": "must",
+  "howToAssess": "Review the classification, the legal/ethical basis, the access controls, whether access is logged, and the risk of identifying individuals.",
+  "assessmentObjectLabel": "Dataset/service",
+  "assessmentObject": [
+    "object/dataset",
+    "object/service"
+  ],
+  "applicability": "For open, non-sensitive resources, record the classification decision and the reason for it.",
+  "evidence": [
+    "Data classification",
+    "DPIA/ethics/access review where needed",
+    "test of access controls",
+    "approval date"
+  ],
+  "assessmentFrequency": "At least annually and on scope change"
+}

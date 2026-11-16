@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/issue-correction-and-appeal-route",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "issue-correction-and-appeal-route",
+  "name": "Issue, correction and appeal route",
+  "inScheme": "scheme",
+  "principle": "principle/governance-legal-and-ethics",
+  "requirement": "Users must have a documented way to report data problems, ask for corrections and, where relevant, challenge access decisions or automated decisions.",
+  "requirementLevel": "must",
+  "howToAssess": "Submit real or test issues of different types. Check how they are sorted, tracked, answered on time and closed.",
+  "assessmentObjectLabel": "Resource/service",
+  "assessmentObject": [
+    "object/resource",
+    "object/service"
+  ],
+  "applicability": "All resources; appeal requirements depend on the service and data type.",
+  "evidence": [
+    "Issue/appeal policy",
+    "help desk route",
+    "response-time targets",
+    "sample of tracked issues"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/findability-and-support",
+    "criterion/monitoring-and-reliability"
+  ],
+  "assessmentFrequency": "Annually",
+  "goodExample": "A \"report an issue\" link on each entry, with tracked tickets and a target response time.",
+  "poorExample": "Users email a general address and never hear back."
+}

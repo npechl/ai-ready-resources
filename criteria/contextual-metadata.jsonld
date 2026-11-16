@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/contextual-metadata",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "contextual-metadata",
+  "name": "Contextual metadata",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-clarity",
+  "requirement": "Records must include, or link to, the context needed to interpret them for the declared use case.",
+  "requirementLevel": "must",
+  "howToAssess": "Decide which context is needed. Measure how many records have it and whether the links work.",
+  "assessmentObjectLabel": "Records/dataset",
+  "assessmentObject": [
+    "object/record",
+    "object/dataset"
+  ],
+  "applicability": "Use-case dependent; N/A requires a documented rationale.",
+  "evidence": [
+    "List of required context fields",
+    "completeness report",
+    "examples of linked metadata"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/completeness"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "MLCommons Croissant"
+  ],
+  "goodExample": "ENA/BioSamples sample checklists require context such as organism, tissue and collection date.",
+  "poorExample": "Expression values come with no record of tissue, condition or protocol."
+}

@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/assertion",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "assertion",
+  "name": "Assertion",
+  "inScheme": "assessment-objects",
+  "description": "A statement that something is true about an entity, normally supported by evidence or provenance.",
+  "exampleScope": "“Protein X has function Y”",
+  "assessedBy": [
+    "criterion/source-attribution"
+  ]
+}

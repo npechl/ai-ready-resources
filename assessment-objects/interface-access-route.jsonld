@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/interface-access-route",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "interface-access-route",
+  "name": "Interface / access route",
+  "inScheme": "assessment-objects",
+  "description": "Any supported route through which data can be obtained. It is broader than an API.",
+  "exampleScope": "API, FTP, object store or downloadable files",
+  "assessedBy": [
+    "criterion/supported-access",
+    "criterion/executable-example"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/storage",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "storage",
+  "name": "Storage",
+  "inScheme": "assessment-objects",
+  "description": "The infrastructure preserving authoritative data, metadata, releases and backups.",
+  "exampleScope": "Database, object store or release archive",
+  "assessedBy": [
+    "criterion/long-term-access",
+    "criterion/recovery-and-continuity"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/file",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "file",
+  "name": "File",
+  "inScheme": "assessment-objects",
+  "description": "An individual downloadable artefact. Different files or formats may need separate assessment if their content or semantics differ.",
+  "exampleScope": "XML export, TSV file, archive, manifest",
+  "assessedBy": [
+    "criterion/bulk-retrieval-and-integrity",
+    "criterion/schema-conformance",
+    "criterion/release-and-schema-identification",
+    "criterion/release-immutability",
+    "criterion/licence-clarity"
+  ]
+}

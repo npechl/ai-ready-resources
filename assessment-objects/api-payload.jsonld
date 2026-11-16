@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/api-payload",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "api-payload",
+  "name": "API payload",
+  "inScheme": "assessment-objects",
+  "description": "A particular request or response representation returned through an API.",
+  "exampleScope": "JSON search response or error response",
+  "assessedBy": [
+    "criterion/schema-conformance",
+    "criterion/release-and-schema-identification"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/support",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "support",
+  "name": "Support",
+  "inScheme": "assessment-objects",
+  "description": "The maintained route through which users report problems, request corrections or receive assistance.",
+  "exampleScope": "Helpdesk or issue tracker",
+  "assessedBy": [
+    "criterion/findability-and-support"
+  ]
+}

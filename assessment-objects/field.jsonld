@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/field",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "field",
+  "name": "Field",
+  "inScheme": "assessment-objects",
+  "description": "A named attribute within a record or schema. Field-level assessment covers meaning, datatype, cardinality, units and missing-value semantics.",
+  "exampleScope": "organism_id, sequence, confidence score",
+  "assessedBy": [
+    "criterion/completeness",
+    "criterion/label-quality",
+    "criterion/typed-values",
+    "criterion/vocabulary-use",
+    "criterion/data-dictionary-coverage",
+    "criterion/missing-and-null-semantics",
+    "criterion/derivation-definitions"
+  ]
+}

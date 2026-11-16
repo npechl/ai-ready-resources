@@ -1,0 +1,30 @@
+Assessment object	Description	Example scope
+API	"A programmable access mechanism comprising operations, request parameters, responses and errors."	"REST, GraphQL or query API"
+API payload	A particular request or response representation returned through an API.	JSON search response or error response
+Assertion	"A statement that something is true about an entity, normally supported by evidence or provenance."	“Protein X has function Y”
+Cross-reference	A link from an identifier or record to an entry in another resource.	Link from a protein record to a structure
+Data lifecycle	"The processes governing data from acquisition through publication, correction, withdrawal, retention and deletion."	Withdrawal propagation across exports and caches
+Dataset	A defined collection of records distributed or managed together. It may be the complete resource or a documented subset.	Reviewed protein records; a species-specific dataset
+Declared AI use case	The particular AI task and operating context against which readiness is judged. It is not a technical component of the resource.	"RAG, model training or automated classification"
+Derived value	"A value calculated or inferred from other data. Its method, inputs, parameters and provenance must be documented."	Predicted score or aggregated measurement
+Documentation set	The complete controlled documentation required to interpret and use the assessed component.	"Data dictionary, API guide, release notes and limitations"
+Entity	"The biological or informational thing represented by the data, rather than the record that describes it."	"Protein, gene, publication, sample, disease"
+Export	A representation of resource data produced for distribution. It may comprise multiple files.	Public JSON export or RDF distribution
+Field	"A named attribute within a record or schema. Field-level assessment covers meaning, datatype, cardinality, units and missing-value semantics."	"organism_id, sequence, confidence score"
+File	An individual downloadable artefact. Different files or formats may need separate assessment if their content or semantics differ.	"XML export, TSV file, archive, manifest"
+Identifier	"A code used to identify a resource, entity or record. Assessment covers syntax, namespace, persistence and resolution."	"Accession, DOI or CURIE"
+Interface / access route	Any supported route through which data can be obtained. It is broader than an API.	"API, FTP, object store or downloadable files"
+Label / annotation	"A category, classification or interpretation attached to an entity, often used as an AI target or ground truth."	Functional annotation or phenotype label
+Mapping	"An explicit relationship between fields, schemas, identifiers or ontology concepts."	Local term mapped to an ontology term
+Measurement	"An observed quantitative or qualitative result, including its unit, precision and uncertainty."	Expression level or binding affinity
+Output	An artefact produced by a pipeline or service. It may be compared with expected output during reproducibility testing.	"Generated dataset, index or validation report"
+Pipeline / workflow	"The ordered processing activities that ingest, transform, validate or publish data."	Curation import or release-generation pipeline
+Record	"A single distributed entry, document, row or structured record."	"One protein, study, sample or structure record"
+Release	A dated or versioned snapshot of a resource or dataset. Assessment evidence should normally identify the exact release tested.	Release 2026_08
+Resource	"The named EBI resource as a whole, including its data, access mechanisms, documentation and governance arrangements."	The complete public resource
+Runtime / dependencies	"The software environment, libraries, configuration, reference data and material hardware assumptions used by a pipeline."	"Container image, lockfile and reference dataset"
+Schema	"The formal definition of the structure and constraints of records, files or messages."	"JSON Schema, XML Schema or relational schema"
+Service	"The deployed operational system delivering an interface. Service assessment covers availability, latency, monitoring and recovery."	Production API deployment
+Storage	"The infrastructure preserving authoritative data, metadata, releases and backups."	"Database, object store or release archive"
+Support	"The maintained route through which users report problems, request corrections or receive assistance."	Helpdesk or issue tracker
+Vocabulary / ontology	A controlled collection of terms and definitions used to represent concepts consistently.	"GO, ChEBI or EDAM"

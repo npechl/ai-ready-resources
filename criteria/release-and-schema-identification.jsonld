@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/release-and-schema-identification",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "release-and-schema-identification",
+  "name": "Release and schema identification",
+  "inScheme": "scheme",
+  "principle": "principle/machine-actionability",
+  "requirement": "Software using the data must be able to tell which release and which schema version it received.",
+  "requirementLevel": "must",
+  "howToAssess": "Check manifests, HTTP headers and response content for release and schema versions, and follow any linked metadata.",
+  "assessmentObjectLabel": "Files/API payloads",
+  "assessmentObject": [
+    "object/file",
+    "object/api-payload"
+  ],
+  "applicability": "All downloads and API responses, either directly or through linked metadata.",
+  "evidence": [
+    "Version fields/headers",
+    "release manifest",
+    "metadata record"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "RDA FAIR indicators",
+    "MLCommons Croissant"
+  ],
+  "goodExample": "UniProt REST responses carry release headers (X-UniProt-Release), and AlphaFold DB file names include the model version.",
+  "poorExample": "The release is only shown in the website footer."
+}

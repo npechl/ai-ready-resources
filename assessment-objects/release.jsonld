@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/release",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "release",
+  "name": "Release",
+  "inScheme": "assessment-objects",
+  "description": "A dated or versioned snapshot of a resource or dataset. Assessment evidence should normally identify the exact release tested.",
+  "exampleScope": "Release 2026_08",
+  "assessedBy": [
+    "criterion/validation",
+    "criterion/representativeness",
+    "criterion/bulk-retrieval-and-integrity",
+    "criterion/long-term-access",
+    "criterion/version-and-change-history",
+    "criterion/release-immutability"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/entity",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "entity",
+  "name": "Entity",
+  "inScheme": "assessment-objects",
+  "description": "The biological or informational thing represented by the data, rather than the record that describes it.",
+  "exampleScope": "Protein, gene, publication, sample, disease",
+  "assessedBy": [
+    "criterion/duplicates",
+    "criterion/explicit-relationships"
+  ]
+}

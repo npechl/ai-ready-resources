@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/accountability",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "accountability",
+  "name": "Accountability",
+  "inScheme": "scheme",
+  "principle": "principle/governance-legal-and-ethics",
+  "requirement": "Someone must be named as responsible for data stewardship, service ownership and decisions for every 'must' criterion.",
+  "requirementLevel": "must",
+  "howToAssess": "Review the ownership table and escalation routes. For a sample of criteria, check that the owners agree with the current evidence and open actions.",
+  "assessmentObjectLabel": "Resource/criterion",
+  "assessmentObject": [
+    "object/resource"
+  ],
+  "applicability": "All resources.",
+  "evidence": [
+    "RACI/ownership table",
+    "contact route",
+    "approval log",
+    "escalation policy"
+  ],
+  "assessmentFrequency": "Quarterly",
+  "goodExample": "An ownership table naming the responsible team for each criterion, with a contact and escalation route.",
+  "poorExample": "Nobody can say who decides whether a quality issue blocks a release."
+}

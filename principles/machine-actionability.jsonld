@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "principle/machine-actionability",
+  "type": [
+    "Principle",
+    "dqv:Dimension",
+    "skos:Concept"
+  ],
+  "identifier": "machine-actionability",
+  "name": "Machine actionability",
+  "inScheme": "principles",
+  "hasCriterion": [
+    "criterion/schema-conformance",
+    "criterion/typed-values",
+    "criterion/deterministic-traversal",
+    "criterion/release-and-schema-identification"
+  ]
+}

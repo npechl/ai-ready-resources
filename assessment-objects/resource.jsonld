@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/resource",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "resource",
+  "name": "Resource",
+  "inScheme": "assessment-objects",
+  "description": "The named EBI resource as a whole, including its data, access mechanisms, documentation and governance arrangements.",
+  "exampleScope": "The complete public resource",
+  "assessedBy": [
+    "criterion/intended-use-and-known-limitations",
+    "criterion/supported-access",
+    "criterion/standard-export-profile",
+    "criterion/version-and-change-history",
+    "criterion/citation-and-attribution",
+    "criterion/licence-clarity",
+    "criterion/accountability",
+    "criterion/issue-correction-and-appeal-route",
+    "criterion/executable-example"
+  ]
+}

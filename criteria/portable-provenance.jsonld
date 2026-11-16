@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/portable-provenance",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "portable-provenance",
+  "name": "Portable provenance",
+  "inScheme": "scheme",
+  "principle": "principle/provenance",
+  "requirement": "Bulk downloads and APIs should keep provenance, or link to it, rather than dropping it when data is converted to another format.",
+  "requirementLevel": "should",
+  "howToAssess": "Compare the provenance held internally or at the source with what each download format and API actually includes.",
+  "assessmentObjectLabel": "Exports/API",
+  "assessmentObject": [
+    "object/export",
+    "object/api"
+  ],
+  "applicability": "N/A where source records hold no provenance beyond the release itself.",
+  "evidence": [
+    "Table mapping provenance fields across formats",
+    "export tests",
+    "examples of provenance in each format"
+  ],
+  "assessmentFrequency": "Per export/schema change",
+  "relatedStandard": [
+    "W3C PROV-O",
+    "RO-Crate"
+  ],
+  "goodExample": "Evidence codes and source references appear in both the API JSON and the flat-file downloads.",
+  "poorExample": "The TSV export drops the evidence column."
+}

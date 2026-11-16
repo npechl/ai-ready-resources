@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/documentation-versioning",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "documentation-versioning",
+  "name": "Documentation versioning",
+  "inScheme": "scheme",
+  "principle": "principle/documentation",
+  "requirement": "Documentation must state which resource/interface versions it describes, and keep a history of its changes.",
+  "requirementLevel": "must",
+  "howToAssess": "Compare current and past documentation with the releases. Test links to versions and archived pages.",
+  "assessmentObjectLabel": "Documentation set",
+  "assessmentObject": [
+    "object/documentation-set"
+  ],
+  "applicability": "All resources.",
+  "evidence": [
+    "Versioned documentation",
+    "change history",
+    "archive",
+    "date of last review"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/change-and-deprecation-policy",
+    "criterion/version-and-change-history"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "RDA FAIR indicators"
+  ]
+}

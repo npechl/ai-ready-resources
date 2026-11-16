@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/validation",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "validation",
+  "name": "Validation",
+  "inScheme": "scheme",
+  "principle": "principle/quality",
+  "requirement": "Every release must be checked against a versioned set of validation rules, split into critical and non-critical rules. The rules must check that values have the declared datatypes, formats, ranges and allowed values.",
+  "requirementLevel": "must",
+  "howToAssess": "Run the declared validator on the exact release. Record the versions of the validator, rule set and schema. Report failures by rule, field and source, and review all of them.",
+  "assessmentObjectLabel": "Dataset/release",
+  "assessmentObject": [
+    "object/dataset",
+    "object/release"
+  ],
+  "applicability": "All distributed datasets. N/A is not normally allowed.",
+  "evidence": [
+    "Machine-readable validation report",
+    "list of rules",
+    "constraint definitions",
+    "counts of invalid values",
+    "release manifest",
+    "log of accepted exceptions"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/schema-conformance",
+    "criterion/typed-values",
+    "criterion/vocabulary-use"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "W3C DQV",
+    "RDA FAIR indicators"
+  ],
+  "goodExample": "wwPDB publishes a validation report (PDF and XML) for every PDB entry, made with a stated software version.",
+  "poorExample": "Checks run by hand before release, with no record of which rules were used."
+}

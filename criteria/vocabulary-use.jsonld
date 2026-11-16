@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/vocabulary-use",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "vocabulary-use",
+  "name": "Vocabulary use",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-interoperability",
+  "requirement": "Fields that describe concepts must use declared controlled vocabularies, ontologies or documented lists of allowed values.",
+  "requirementLevel": "must",
+  "howToAssess": "Extract the values actually used and compare them with the declared vocabulary/value list and its version.",
+  "assessmentObjectLabel": "Fields/concepts",
+  "assessmentObject": [
+    "object/field",
+    "object/vocabulary-ontology"
+  ],
+  "applicability": "N/A only for fields that are genuinely free text.",
+  "evidence": [
+    "Versioning policy",
+    "deprecation notices",
+    "migration guides",
+    "compatibility tests"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/version-and-change-history",
+    "criterion/documentation-versioning"
+  ],
+  "assessmentFrequency": "Per release",
+  "goodExample": "Expression Atlas and the GWAS Catalog annotate traits and conditions with EFO terms.",
+  "poorExample": "A disease field with \"breast ca\", \"Breast cancer\" and \"BRCA\" for the same concept."
+}

@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/bulk-retrieval-and-integrity",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "bulk-retrieval-and-integrity",
+  "name": "Bulk retrieval and integrity",
+  "inScheme": "scheme",
+  "principle": "principle/accessibility",
+  "requirement": "Bulk downloads must let users retrieve the complete release and check that the files arrived intact.",
+  "requirementLevel": "must",
+  "howToAssess": "Download a release on a clean machine. Compare the file list, file sizes and checksums with the release manifest/metadata.",
+  "assessmentObjectLabel": "Files/release",
+  "assessmentObject": [
+    "object/file",
+    "object/release"
+  ],
+  "applicability": "N/A where bulk download is not allowed for a valid reason and this is documented.",
+  "evidence": [
+    "Download instructions",
+    "manifest",
+    "checksums",
+    "test log",
+    "README file"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "RDA FAIR indicators"
+  ],
+  "goodExample": "ENA file reports list an MD5 checksum for each read file.",
+  "poorExample": "A download page with no file list or checksums, where a half-downloaded file looks complete."
+}

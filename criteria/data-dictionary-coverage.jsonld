@@ -1,0 +1,31 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/data-dictionary-coverage",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "data-dictionary-coverage",
+  "name": "Data dictionary coverage",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-clarity",
+  "requirement": "Every public field must have a definition that software can read.",
+  "requirementLevel": "must",
+  "howToAssess": "Compare the list of fields in the schema with the data dictionary. Flag fields with missing or duplicate definitions.",
+  "assessmentObjectLabel": "Fields",
+  "assessmentObject": [
+    "object/field"
+  ],
+  "applicability": "All distributed fields, including nested and derived fields.",
+  "evidence": [
+    "Data dictionary",
+    "schema",
+    "automated report of which fields are covered"
+  ],
+  "assessmentFrequency": "Per schema change"
+}

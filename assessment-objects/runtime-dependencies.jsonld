@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/runtime-dependencies",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "runtime-dependencies",
+  "name": "Runtime / dependencies",
+  "inScheme": "assessment-objects",
+  "description": "The software environment, libraries, configuration, reference data and material hardware assumptions used by a pipeline.",
+  "exampleScope": "Container image, lockfile and reference dataset",
+  "assessedBy": [
+    "criterion/environment-capture"
+  ]
+}

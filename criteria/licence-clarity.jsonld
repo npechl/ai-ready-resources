@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/licence-clarity",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "licence-clarity",
+  "name": "Licence clarity",
+  "inScheme": "scheme",
+  "principle": "principle/governance-legal-and-ethics",
+  "requirement": "Every distributed part of the resource must have a clear, current licence or terms of use.",
+  "requirementLevel": "must",
+  "howToAssess": "Compare the licence statements on landing pages, APIs, files and metadata, and check any records with different terms.",
+  "assessmentObjectLabel": "Resource/files/records",
+  "assessmentObject": [
+    "object/resource",
+    "object/file",
+    "object/record"
+  ],
+  "applicability": "All resources. Where some records have different terms, this must be shown.",
+  "evidence": [
+    "Licence identifier/URI",
+    "version/date of the terms",
+    "rules for exceptions",
+    "check that statements match everywhere"
+  ],
+  "assessmentFrequency": "At least annually and per policy change",
+  "goodExample": "PDBe data is released under CC0 and UniProt under CC BY 4.0, stated on the website, in the API and in the download files.",
+  "poorExample": "The website says CC BY, the download README says nothing, and some records have other terms."
+}

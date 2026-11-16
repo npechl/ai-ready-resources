@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/resolvable-external-links",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "resolvable-external-links",
+  "name": "Resolvable external links",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-interoperability",
+  "requirement": "Cross-references must say which database they point to and use correctly formatted persistent identifiers that can be looked up, where these exist.",
+  "requirementLevel": "must",
+  "howToAssess": "Check the format of cross-references and look up a sample from each target database, including links from current and retired records.",
+  "assessmentObjectLabel": "Cross-references",
+  "assessmentObject": [
+    "object/cross-reference"
+  ],
+  "applicability": "N/A only if the resource has no external references and the reason is explained.",
+  "evidence": [
+    "Cross-reference schema",
+    "mapping to registered prefixes",
+    "report of lookup results"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/identifier-namespaces"
+  ],
+  "assessmentFrequency": "Per release"
+}

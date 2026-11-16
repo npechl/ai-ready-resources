@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/machine-readable-api-specification",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "machine-readable-api-specification",
+  "name": "Machine-readable API specification",
+  "inScheme": "scheme",
+  "principle": "principle/accessibility",
+  "requirement": "Production APIs must publish a versioned specification that describes requests, responses and errors. Errors must have a fixed structure, stay stable over time and be documented.",
+  "requirementLevel": "must",
+  "howToAssess": "Check a representative set of successful and failed responses against the published specification. Cause each type of error on purpose: invalid input, missing record, unauthorised access, rate limit and temporary service failure.",
+  "assessmentObjectLabel": "API",
+  "assessmentObject": [
+    "object/api"
+  ],
+  "applicability": "N/A where no API is offered.",
+  "evidence": [
+    "OpenAPI/GraphQL/schema specification",
+    "error schema",
+    "list of error codes",
+    "report of the check against the specification",
+    "example requests"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/access-controls-and-limits"
+  ],
+  "assessmentFrequency": "Per API release",
+  "relatedStandard": [
+    "OpenAPI Specification"
+  ],
+  "goodExample": "An OpenAPI document lists every endpoint, parameter and response, including error responses in a fixed JSON structure (code, message, details).",
+  "poorExample": "The API is described only in prose on a help page, and errors come back as HTML pages."
+}

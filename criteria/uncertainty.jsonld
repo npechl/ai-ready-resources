@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/uncertainty",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "uncertainty",
+  "name": "Uncertainty",
+  "inScheme": "scheme",
+  "principle": "principle/quality",
+  "requirement": "Measured, predicted or disputed values must show their uncertainty or strength of evidence, where this changes how the value should be read.",
+  "requirementLevel": "must",
+  "howToAssess": "Look at a sample of measured and predicted fields. Check that confidence scores, evidence codes or uncertainty values are present, defined and filled in.",
+  "assessmentObjectLabel": "values/measurements",
+  "assessmentObject": [
+    "object/measurement"
+  ],
+  "applicability": "N/A for fixed administrative values with no real uncertainty.",
+  "evidence": [
+    "Description of how uncertainty is recorded",
+    "definitions of evidence codes",
+    "example records"
+  ],
+  "assessmentFrequency": "Per schema change/Per release",
+  "relatedStandard": [
+    "W3C DQV"
+  ],
+  "goodExample": "AlphaFold DB gives a per-residue confidence score (pLDDT) in every model; UniProt tags annotations with ECO evidence codes.",
+  "poorExample": "Predicted and measured values are in the same field with nothing to tell them apart."
+}

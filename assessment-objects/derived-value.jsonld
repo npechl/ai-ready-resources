@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/derived-value",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "derived-value",
+  "name": "Derived value",
+  "inScheme": "assessment-objects",
+  "description": "A value calculated or inferred from other data. Its method, inputs, parameters and provenance must be documented.",
+  "exampleScope": "Predicted score or aggregated measurement",
+  "assessedBy": [
+    "criterion/processing-lineage"
+  ]
+}

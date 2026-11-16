@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "principle/documentation",
+  "type": [
+    "Principle",
+    "dqv:Dimension",
+    "skos:Concept"
+  ],
+  "identifier": "documentation",
+  "name": "Documentation",
+  "inScheme": "principles",
+  "hasCriterion": [
+    "criterion/executable-example",
+    "criterion/documentation-versioning",
+    "criterion/change-and-deprecation-policy",
+    "criterion/findability-and-support"
+  ]
+}

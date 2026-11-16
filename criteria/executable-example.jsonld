@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/executable-example",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "executable-example",
+  "name": "Executable example",
+  "inScheme": "scheme",
+  "principle": "principle/documentation",
+  "requirement": "Documentation must include a small working example for each main access route. At least one example must show the whole automated process: finding the data, downloading it, validating it and recording its version.",
+  "requirementLevel": "must",
+  "howToAssess": "Run each example on a clean, supported setup using the current release. It must work without any manual steps that are not documented.",
+  "assessmentObjectLabel": "Resource/interface",
+  "assessmentObject": [
+    "object/resource",
+    "object/interface-access-route"
+  ],
+  "applicability": "All main supported access routes. The end-to-end example may use bulk files instead of an API.",
+  "evidence": [
+    "Versioned examples",
+    "dependency/environment notes",
+    "execution logs"
+  ],
+  "assessmentFrequency": "Per release/interface change",
+  "relatedStandard": [
+    "OpenAPI Specification",
+    "RO-Crate"
+  ],
+  "goodExample": "A notebook in the docs repository finds, downloads and validates a dataset and records its release, and it runs automatically on each release.",
+  "poorExample": "A code snippet in the docs no longer works with the current API."
+}

@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/schema-conformance",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "schema-conformance",
+  "name": "Schema conformance",
+  "inScheme": "scheme",
+  "principle": "principle/machine-actionability",
+  "requirement": "Outputs meant to be read by software must follow a published, versioned schema.",
+  "requirementLevel": "must",
+  "howToAssess": "Check complete files, or a sample of API responses large enough to be meaningful, against the declared schema.",
+  "assessmentObjectLabel": "Files/API payloads",
+  "assessmentObject": [
+    "object/file",
+    "object/api-payload"
+  ],
+  "applicability": "All machine-consumable outputs.",
+  "evidence": [
+    "Schema URI/version",
+    "validation report",
+    "typical examples of valid and invalid output"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/validation",
+    "criterion/typed-values"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "MLCommons Croissant"
+  ],
+  "goodExample": "mmCIF files are checked against the PDBx/mmCIF dictionary before release.",
+  "poorExample": "JSON outputs whose structure changes between records with no schema to validate against."
+}

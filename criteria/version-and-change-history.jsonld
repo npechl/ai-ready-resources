@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/version-and-change-history",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "version-and-change-history",
+  "name": "Version and change history",
+  "inScheme": "scheme",
+  "principle": "principle/provenance",
+  "requirement": "Each release must have a unique identifier, a date and a change history that separates schema changes, content changes and corrections.",
+  "requirementLevel": "must",
+  "howToAssess": "Compare consecutive releases with the published change log. Check version fields and migration notes.",
+  "assessmentObjectLabel": "Release/resource",
+  "assessmentObject": [
+    "object/release",
+    "object/resource"
+  ],
+  "applicability": "All released resources.",
+  "evidence": [
+    "Release notes",
+    "versioning policy",
+    "list of schema differences",
+    "log of corrections"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/change-and-deprecation-policy",
+    "criterion/documentation-versioning"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "RDA FAIR indicators"
+  ]
+}

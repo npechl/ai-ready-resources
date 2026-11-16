@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/pipeline-workflow",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "pipeline-workflow",
+  "name": "Pipeline / workflow",
+  "inScheme": "assessment-objects",
+  "description": "The ordered processing activities that ingest, transform, validate or publish data.",
+  "exampleScope": "Curation import or release-generation pipeline",
+  "assessedBy": [
+    "criterion/version-controlled-pipelines",
+    "criterion/reproduction-test",
+    "criterion/capacity-and-scalability",
+    "criterion/monitoring-and-reliability"
+  ]
+}

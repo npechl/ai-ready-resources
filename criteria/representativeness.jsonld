@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/representativeness",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "representativeness",
+  "name": "Representativeness",
+  "inScheme": "scheme",
+  "principle": "principle/quality",
+  "requirement": "The data must be checked for how well it covers the population or cases that the declared AI use case targets.",
+  "requirementLevel": "must",
+  "howToAssess": "Compare what the dataset contains with what the use case needs, e.g. by organism, assay, geography, time, phenotype or evidence type.",
+  "assessmentObjectLabel": "Dataset/release",
+  "assessmentObject": [
+    "object/dataset",
+    "object/release"
+  ],
+  "applicability": "N/A only when the declared use case clearly does not depend on how well the data covers a population.",
+  "evidence": [
+    "Breakdown of what the data covers",
+    "definition of the target population",
+    "analysis of gaps and bias"
+  ],
+  "assessmentFrequency": "Per major release or use-case change"
+}

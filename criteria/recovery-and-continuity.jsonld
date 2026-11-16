@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/recovery-and-continuity",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "recovery-and-continuity",
+  "name": "Recovery and continuity",
+  "inScheme": "scheme",
+  "principle": "principle/infrastructure",
+  "requirement": "Critical data and metadata must have a defined and tested procedure for backup, restore or rebuild.",
+  "requirementLevel": "must",
+  "howToAssess": "Review the recovery targets. Restore or rebuild one typical release/component and compare the result with the targets.",
+  "assessmentObjectLabel": "Storage/service",
+  "assessmentObject": [
+    "object/storage",
+    "object/service"
+  ],
+  "applicability": "All authoritative or curated resources.",
+  "evidence": [
+    "Backup/rebuild policy",
+    "RPO/RTO",
+    "record of a restore test",
+    "list of dependencies"
+  ],
+  "assessmentFrequency": "At least annually",
+  "goodExample": "Backups are restored in a yearly test, and the time to recover is recorded against the target.",
+  "poorExample": "Backups exist but have never been restored."
+}

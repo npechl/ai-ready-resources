@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/dataset",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "dataset",
+  "name": "Dataset",
+  "inScheme": "assessment-objects",
+  "description": "A defined collection of records distributed or managed together. It may be the complete resource or a documented subset.",
+  "exampleScope": "Reviewed protein records; a species-specific dataset",
+  "assessedBy": [
+    "criterion/validation",
+    "criterion/representativeness",
+    "criterion/intended-use-and-known-limitations",
+    "criterion/contextual-metadata",
+    "criterion/use-restrictions",
+    "criterion/sensitivity-and-access-review"
+  ]
+}

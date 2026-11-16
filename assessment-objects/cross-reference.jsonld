@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/cross-reference",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "cross-reference",
+  "name": "Cross-reference",
+  "inScheme": "assessment-objects",
+  "description": "A link from an identifier or record to an entry in another resource.",
+  "exampleScope": "Link from a protein record to a structure",
+  "assessedBy": [
+    "criterion/resolvable-external-links"
+  ]
+}

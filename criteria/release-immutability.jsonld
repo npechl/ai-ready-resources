@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/release-immutability",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "release-immutability",
+  "name": "Release immutability",
+  "inScheme": "scheme",
+  "principle": "principle/provenance",
+  "requirement": "Published releases must not change. If a file must be changed under the same identifier, the change must be detectable and follow a defined process.",
+  "requirementLevel": "must",
+  "howToAssess": "Retrieve stored copies/manifests of past releases. Compare checksums and the revision history.",
+  "assessmentObjectLabel": "Release/files",
+  "assessmentObject": [
+    "object/release",
+    "object/file"
+  ],
+  "applicability": "All citable releases/files.",
+  "evidence": [
+    "Checksum manifests",
+    "policy on revisions",
+    "stored copies of releases",
+    "correction notices"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/long-term-access",
+    "criterion/retention-and-deletion"
+  ],
+  "assessmentFrequency": "Per release"
+}

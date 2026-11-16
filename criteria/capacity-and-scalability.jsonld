@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/capacity-and-scalability",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "capacity-and-scalability",
+  "name": "Capacity and scalability",
+  "inScheme": "scheme",
+  "principle": "principle/infrastructure",
+  "requirement": "Capacity limits and how the system copes with growth should be measured against the expected data volume and automated use.",
+  "requirementLevel": "should",
+  "howToAssess": "Run or review load tests based on stated assumptions about data volume and parallel users. Look for bottlenecks and spare capacity.",
+  "assessmentObjectLabel": "Service/pipeline",
+  "assessmentObject": [
+    "object/service",
+    "object/pipeline-workflow"
+  ],
+  "applicability": "N/A for small static resources with no material scaling risk.",
+  "evidence": [
+    "Capacity model",
+    "load-test report",
+    "growth forecast",
+    "policy for scaling up/queuing requests"
+  ],
+  "assessmentFrequency": "At least annually"
+}

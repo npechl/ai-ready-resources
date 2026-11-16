@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/data-lifecycle",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "data-lifecycle",
+  "name": "Data lifecycle",
+  "inScheme": "assessment-objects",
+  "description": "The processes governing data from acquisition through publication, correction, withdrawal, retention and deletion.",
+  "exampleScope": "Withdrawal propagation across exports and caches",
+  "assessedBy": [
+    "criterion/retention-and-deletion"
+  ]
+}

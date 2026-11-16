@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/citation-and-attribution",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "citation-and-attribution",
+  "name": "Citation and attribution",
+  "inScheme": "scheme",
+  "principle": "principle/provenance",
+  "requirement": "People and software must be able to find out how to cite the resource, a specific release, and the contributors/sources behind it.",
+  "requirementLevel": "must",
+  "howToAssess": "Check the landing page, metadata exports and sample records for citation/attribution information.",
+  "assessmentObjectLabel": "Resource/records",
+  "assessmentObject": [
+    "object/resource",
+    "object/record"
+  ],
+  "applicability": "All public resources.",
+  "evidence": [
+    "Citation metadata",
+    "DOI/accession guidance",
+    "contributor roles",
+    "attribution required by the licence"
+  ],
+  "assessmentFrequency": "Per release",
+  "goodExample": "ChEMBL issues a DOI for each release, and the landing page shows how to cite it.",
+  "poorExample": "Users cite the website URL with no release."
+}

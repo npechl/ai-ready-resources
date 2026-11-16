@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "principle/infrastructure",
+  "type": [
+    "Principle",
+    "dqv:Dimension",
+    "skos:Concept"
+  ],
+  "identifier": "infrastructure",
+  "name": "Infrastructure",
+  "inScheme": "principles",
+  "hasCriterion": [
+    "criterion/version-controlled-pipelines",
+    "criterion/environment-capture",
+    "criterion/reproduction-test",
+    "criterion/capacity-and-scalability",
+    "criterion/monitoring-and-reliability",
+    "criterion/recovery-and-continuity"
+  ]
+}

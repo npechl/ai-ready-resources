@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/intended-use-and-known-limitations",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "intended-use-and-known-limitations",
+  "name": "Intended use and known limitations",
+  "inScheme": "scheme",
+  "principle": "principle/quality",
+  "requirement": "Documentation must state what the data is meant for, what it should not be used for, any assumptions relevant to AI, and known quality problems with the records they affect. This information must be easy to find and versioned.",
+  "requirementLevel": "must",
+  "howToAssess": "Compare the declared use case, risk analysis, issue lists, QC reports and public documentation. On a sample, check that the affected records can be identified.",
+  "assessmentObjectLabel": "Resource/dataset",
+  "assessmentObject": [
+    "object/resource",
+    "object/dataset"
+  ],
+  "applicability": "All resources.",
+  "evidence": [
+    "Limitations statement",
+    "issue log",
+    "affected-record flags/queries",
+    "review date"
+  ],
+  "assessmentFrequency": "Per major release, and when the use case changes"
+}

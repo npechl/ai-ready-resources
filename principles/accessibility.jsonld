@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "principle/accessibility",
+  "type": [
+    "Principle",
+    "dqv:Dimension",
+    "skos:Concept"
+  ],
+  "identifier": "accessibility",
+  "name": "Accessibility",
+  "inScheme": "principles",
+  "hasCriterion": [
+    "criterion/supported-access",
+    "criterion/bulk-retrieval-and-integrity",
+    "criterion/machine-readable-api-specification",
+    "criterion/access-controls-and-limits",
+    "criterion/long-term-access"
+  ]
+}

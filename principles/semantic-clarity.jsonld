@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "principle/semantic-clarity",
+  "type": [
+    "Principle",
+    "dqv:Dimension",
+    "skos:Concept"
+  ],
+  "identifier": "semantic-clarity",
+  "name": "Semantic clarity",
+  "inScheme": "principles",
+  "hasCriterion": [
+    "criterion/data-dictionary-coverage",
+    "criterion/missing-and-null-semantics",
+    "criterion/units-and-scales",
+    "criterion/explicit-relationships",
+    "criterion/contextual-metadata",
+    "criterion/derivation-definitions"
+  ]
+}

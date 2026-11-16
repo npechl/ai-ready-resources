@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/api",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "api",
+  "name": "API",
+  "inScheme": "assessment-objects",
+  "description": "A programmable access mechanism comprising operations, request parameters, responses and errors.",
+  "exampleScope": "REST, GraphQL or query API",
+  "assessedBy": [
+    "criterion/machine-readable-api-specification",
+    "criterion/access-controls-and-limits",
+    "criterion/deterministic-traversal",
+    "criterion/portable-provenance",
+    "criterion/change-and-deprecation-policy"
+  ]
+}

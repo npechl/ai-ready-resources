@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/deterministic-traversal",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "deterministic-traversal",
+  "name": "Deterministic traversal",
+  "inScheme": "scheme",
+  "principle": "principle/machine-actionability",
+  "requirement": "Paging, filtering and sorting must always give the same results for the same request, and must be documented, so software can reliably go through all records.",
+  "requirementLevel": "must",
+  "howToAssess": "Download the full result set several times. Check the first and last pages, the default sort order, what happens when data changes during the download, and how cursors behave.",
+  "assessmentObjectLabel": "API",
+  "assessmentObject": [
+    "object/api"
+  ],
+  "applicability": "N/A for static files that are not split into pages.",
+  "evidence": [
+    "API documentation",
+    "automated download test",
+    "report of duplicated or missing records"
+  ],
+  "assessmentFrequency": "Per API release",
+  "relatedStandard": [
+    "OpenAPI Specification"
+  ],
+  "goodExample": "The UniProt REST API pages results with a cursor in the Link: rel=\"next\" header, so a full download returns each record exactly once.",
+  "poorExample": "Offset-based pages shift when entries are added during the download, so records are skipped or repeated."
+}

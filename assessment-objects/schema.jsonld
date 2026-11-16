@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/schema",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "schema",
+  "name": "Schema",
+  "inScheme": "assessment-objects",
+  "description": "The formal definition of the structure and constraints of records, files or messages.",
+  "exampleScope": "JSON Schema, XML Schema or relational schema",
+  "assessedBy": [
+    "criterion/change-and-deprecation-policy"
+  ]
+}

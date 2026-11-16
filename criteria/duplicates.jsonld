@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/duplicates",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "duplicates",
+  "name": "Duplicates",
+  "inScheme": "scheme",
+  "principle": "principle/quality",
+  "requirement": "Duplicate entities and conflicting values should be found and handled using documented rules.",
+  "requirementLevel": "should",
+  "howToAssess": "Run exact and domain-specific duplicate checks. Look at a sample of conflicts and check how they were resolved.",
+  "assessmentObjectLabel": "Entities/records",
+  "assessmentObject": [
+    "object/entity",
+    "object/record"
+  ],
+  "applicability": "All resources, except where repeated records are real repeated observations and not errors.",
+  "evidence": [
+    "Duplicate-rate report",
+    "rules for merging records and resolving conflicts",
+    "check of a sample"
+  ],
+  "assessmentFrequency": "Per release",
+  "relatedStandard": [
+    "W3C DQV",
+    "AI-readiness Criteria for Biomedical Data"
+  ],
+  "goodExample": "UniParc gives identical sequences one identifier, and UniRef groups sequences at 100/90/50% identity so users can remove redundancy.",
+  "poorExample": "The same entity appears under two accessions with conflicting annotations and no rule for merging them."
+}

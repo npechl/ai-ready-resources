@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/identifier-namespaces",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "identifier-namespaces",
+  "name": "Identifier namespaces",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-interoperability",
+  "requirement": "Every identifier field must state which namespace it belongs to, its format, whether it is case-sensitive and how to turn it into a working link.",
+  "requirementLevel": "must",
+  "howToAssess": "Compare the schema/data dictionary with the identifiers actually used and with their registry entries.",
+  "assessmentObjectLabel": "Identifiers",
+  "assessmentObject": [
+    "object/identifier"
+  ],
+  "applicability": "All fields that hold identifiers.",
+  "evidence": [
+    "Identifier policy",
+    "regex/pattern",
+    "namespace URI/prefix",
+    "documentation on how to resolve identifiers"
+  ],
+  "sharesEvidenceWith": [
+    "criterion/resolvable-external-links"
+  ],
+  "assessmentFrequency": "Per schema change",
+  "goodExample": "UniProt publishes the regular expression that valid accessions must match, and the namespace is registered in identifiers.org/Bioregistry.",
+  "poorExample": "An ID column mixing internal and external IDs with no prefix."
+}

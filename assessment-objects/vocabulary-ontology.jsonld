@@ -1,0 +1,22 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "object/vocabulary-ontology",
+  "type": [
+    "AssessmentObject",
+    "skos:Concept"
+  ],
+  "identifier": "vocabulary-ontology",
+  "name": "Vocabulary / ontology",
+  "inScheme": "assessment-objects",
+  "description": "A controlled collection of terms and definitions used to represent concepts consistently.",
+  "exampleScope": "GO, ChEBI or EDAM",
+  "assessedBy": [
+    "criterion/vocabulary-use",
+    "criterion/vocabulary-versioning"
+  ]
+}

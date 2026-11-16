@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "../schemas/context.jsonld",
+    {
+      "@base": "https://example.org/embl-ebi/ai-readiness/"
+    }
+  ],
+  "id": "criterion/explicit-relationships",
+  "type": [
+    "AssessmentCriterion",
+    "skos:Concept"
+  ],
+  "identifier": "explicit-relationships",
+  "name": "Explicit relationships",
+  "inScheme": "scheme",
+  "principle": "principle/semantic-clarity",
+  "requirement": "Links between entities must state the type of relationship, its direction, and how many of each entity can be linked.",
+  "requirementLevel": "must",
+  "howToAssess": "Compare the intended data model with the schema. Follow a sample of links between records to check they behave as described.",
+  "assessmentObjectLabel": "Entities/relationships",
+  "assessmentObject": [
+    "object/entity"
+  ],
+  "applicability": "N/A for flat resources that genuinely hold only one type of entity.",
+  "evidence": [
+    "Entity-relationship model",
+    "definitions of relationship types",
+    "schema rules on how many links are allowed",
+    "examples"
+  ],
+  "assessmentFrequency": "Per schema change",
+  "goodExample": "SIFTS maps PDB residues to UniProt residues, with explicit, typed links between structure and sequence.",
+  "poorExample": "Related entries are only mentioned in free-text comments."
+}
