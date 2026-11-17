@@ -1,2 +1,9 @@
 .DS_Store
 __pycache__/
+.superpowers/
+# Built site and generated pages (rebuild with src/build_site.py)
+site/
+website/criteria/
+website/principles/
+website/objects/
+docs/

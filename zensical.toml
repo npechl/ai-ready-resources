@@ -1,0 +1,36 @@
+[project]
+site_name = "AI-readiness criteria"
+site_description = "EMBL-EBI AI-readiness principles, criteria and assessment objects"
+docs_dir = "website"
+site_dir = "site"
+nav = [
+  { "Home" = "index.md" },
+  { "Principles" = "principles/index.md" },
+  { "Criteria" = "criteria/index.md" },
+  { "Assessment objects" = "objects/index.md" },
+]
+
+[project.theme]
+language = "en"
+features = [
+  "navigation.instant",
+  "navigation.tabs",
+  "navigation.top",
+  "navigation.path",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.toc]
+permalink = true
