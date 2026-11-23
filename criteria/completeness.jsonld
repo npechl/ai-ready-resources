@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/quality",
   "requirement": "Completeness must be measured for every required field and every field that matters for AI use.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "For each field, count how many values are missing, blank or invalid. Break the counts down by record type or source where this is relevant.",
   "assessmentObjectLabel": "Fields/records",
   "assessmentObject": [

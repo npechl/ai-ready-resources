@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-interoperability",
   "requirement": "Mappings between schemas or ontologies must state the type of match (exact, broader, narrower or related), how the mapping was made, the target version, who made it and whether it was reviewed or how confident it is.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Look at a sample of exact, broader, narrower and related mappings. Check the information on how each was created and reviewed.",
   "assessmentObjectLabel": "Mappings",
   "assessmentObject": [

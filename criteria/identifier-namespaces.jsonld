@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-interoperability",
   "requirement": "Every identifier field must state which namespace it belongs to, its format, whether it is case-sensitive and how to turn it into a working link.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Compare the schema/data dictionary with the identifiers actually used and with their registry entries.",
   "assessmentObjectLabel": "Identifiers",
   "assessmentObject": [

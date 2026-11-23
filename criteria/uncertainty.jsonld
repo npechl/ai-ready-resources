@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/quality",
   "requirement": "Measured, predicted or disputed values must show their uncertainty or strength of evidence, where this changes how the value should be read.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Look at a sample of measured and predicted fields. Check that confidence scores, evidence codes or uncertainty values are present, defined and filled in.",
   "assessmentObjectLabel": "values/measurements",
   "assessmentObject": [

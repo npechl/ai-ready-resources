@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/infrastructure",
   "requirement": "Production data processing must be done by code or workflows kept under version control.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "For a sample of outputs, trace each processing step back to a commit/tag in a repository and its workflow definition.",
   "assessmentObjectLabel": "Pipeline",
   "assessmentObject": [

@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-interoperability",
   "requirement": "Cross-references must say which database they point to and use correctly formatted persistent identifiers that can be looked up, where these exist.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Check the format of cross-references and look up a sample from each target database, including links from current and retired records.",
   "assessmentObjectLabel": "Cross-references",
   "assessmentObject": [

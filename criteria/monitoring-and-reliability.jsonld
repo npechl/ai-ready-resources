@@ -15,7 +15,10 @@
   "inScheme": "scheme",
   "principle": "principle/infrastructure",
   "requirement": "Critical components for loading, processing and serving data must report their health, failures and how up to date the data is. Production services should set and monitor targets for availability, response time and error rate.",
-  "requirementLevel": "must/should",
+  "requirementLevel": [
+    "must",
+    "should"
+  ],
   "howToAssess": "Review which components are monitored, where alerts go, the runbooks, and monitoring data for a typical reporting period. Trigger a test alert and test the public status/help route.",
   "assessmentObjectLabel": "Service/pipeline",
   "assessmentObject": [

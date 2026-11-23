@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/governance-legal-and-ethics",
   "requirement": "Someone must be named as responsible for data stewardship, service ownership and decisions for every 'must' criterion.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Review the ownership table and escalation routes. For a sample of criteria, check that the owners agree with the current evidence and open actions.",
   "assessmentObjectLabel": "Resource/criterion",
   "assessmentObject": [

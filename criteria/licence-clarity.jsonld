@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/governance-legal-and-ethics",
   "requirement": "Every distributed part of the resource must have a clear, current licence or terms of use.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Compare the licence statements on landing pages, APIs, files and metadata, and check any records with different terms.",
   "assessmentObjectLabel": "Resource/files/records",
   "assessmentObject": [

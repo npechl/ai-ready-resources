@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/quality",
   "requirement": "Labels used to train or evaluate AI, or used as reference annotations, must have documented quality checks.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Review the annotation guidelines. Check a representative sample that was annotated twice or reviewed independently.",
   "assessmentObjectLabel": "Labels/annotations; Fields",
   "assessmentObject": [

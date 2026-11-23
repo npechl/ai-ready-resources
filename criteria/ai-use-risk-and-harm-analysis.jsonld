@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/governance-legal-and-ethics",
   "requirement": "Serious harms, ways the data could be misused, and groups that could be affected must be assessed for the declared AI use case.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Run a structured risk review covering scientific validity, discrimination, privacy, security, dual use and automation that could mislead.",
   "assessmentObjectLabel": "Declared AI use case",
   "assessmentObject": [

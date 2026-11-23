@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/accessibility",
   "requirement": "Production APIs must publish a versioned specification that describes requests, responses and errors. Errors must have a fixed structure, stay stable over time and be documented.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Check a representative set of successful and failed responses against the published specification. Cause each type of error on purpose: invalid input, missing record, unauthorised access, rate limit and temporary service failure.",
   "assessmentObjectLabel": "API",
   "assessmentObject": [

@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/quality",
   "requirement": "Every release must be checked against a versioned set of validation rules, split into critical and non-critical rules. The rules must check that values have the declared datatypes, formats, ranges and allowed values.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Run the declared validator on the exact release. Record the versions of the validator, rule set and schema. Report failures by rule, field and source, and review all of them.",
   "assessmentObjectLabel": "Dataset/release",
   "assessmentObject": [

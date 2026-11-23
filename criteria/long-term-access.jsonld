@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/accessibility",
   "requirement": "The resource must explain how cited releases, records and metadata stay accessible after they are updated or retired.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Look up a sample of current, replaced and retired identifiers/releases and check what each one returns.",
   "assessmentObjectLabel": "Release/archive",
   "assessmentObject": [

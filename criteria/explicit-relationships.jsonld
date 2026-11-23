@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-clarity",
   "requirement": "Links between entities must state the type of relationship, its direction, and how many of each entity can be linked.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Compare the intended data model with the schema. Follow a sample of links between records to check they behave as described.",
   "assessmentObjectLabel": "Entities/relationships",
   "assessmentObject": [

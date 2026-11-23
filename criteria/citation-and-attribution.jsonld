@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/provenance",
   "requirement": "People and software must be able to find out how to cite the resource, a specific release, and the contributors/sources behind it.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Check the landing page, metadata exports and sample records for citation/attribution information.",
   "assessmentObjectLabel": "Resource/records",
   "assessmentObject": [

@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/provenance",
   "requirement": "Derived values must be traceable through each processing step back to their source inputs.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Pick typical derived records and rebuild their history across the workflow steps.",
   "assessmentObjectLabel": "Derived values",
   "assessmentObject": [

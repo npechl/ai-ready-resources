@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-interoperability",
   "requirement": "Fields that describe concepts must use declared controlled vocabularies, ontologies or documented lists of allowed values.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Extract the values actually used and compare them with the declared vocabulary/value list and its version.",
   "assessmentObjectLabel": "Fields/concepts",
   "assessmentObject": [

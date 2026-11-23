@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/provenance",
   "requirement": "Bulk downloads and APIs should keep provenance, or link to it, rather than dropping it when data is converted to another format.",
-  "requirementLevel": "should",
+  "requirementLevel": [
+    "should"
+  ],
   "howToAssess": "Compare the provenance held internally or at the source with what each download format and API actually includes.",
   "assessmentObjectLabel": "Exports/API",
   "assessmentObject": [

@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/infrastructure",
   "requirement": "A typical production processing step must be re-run at least once a year and after major pipeline changes, and its output compared with the published output within agreed tolerances.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Re-run the step from the stored inputs on a clean setup. Compare the outputs for meaning, and byte by byte where the process should give identical results.",
   "assessmentObjectLabel": "Pipeline/output",
   "assessmentObject": [

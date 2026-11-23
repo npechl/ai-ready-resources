@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-clarity",
   "requirement": "Numeric measurements must state their unit, scale, precision and any transformation applied, where relevant.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "List all numeric measurement fields. Check that units are stated in the records or schema, and that any conversions are correct.",
   "assessmentObjectLabel": "Measurements",
   "assessmentObject": [

@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/accessibility",
   "requirement": "Authentication, authorisation, rate limits, quotas and usage restrictions must be clearly stated and, where they apply, detectable by software.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Test access without authentication and with authentication, with insufficient permissions, and above the quota/rate limit. Check that each case returns a clear response.",
   "assessmentObjectLabel": "API/service",
   "assessmentObject": [

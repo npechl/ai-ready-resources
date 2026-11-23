@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/governance-legal-and-ethics",
   "requirement": "Users must have a documented way to report data problems, ask for corrections and, where relevant, challenge access decisions or automated decisions.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Submit real or test issues of different types. Check how they are sorted, tracked, answered on time and closed.",
   "assessmentObjectLabel": "Resource/service",
   "assessmentObject": [

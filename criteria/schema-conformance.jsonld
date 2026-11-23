@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/machine-actionability",
   "requirement": "Outputs meant to be read by software must follow a published, versioned schema.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Check complete files, or a sample of API responses large enough to be meaningful, against the declared schema.",
   "assessmentObjectLabel": "Files/API payloads",
   "assessmentObject": [

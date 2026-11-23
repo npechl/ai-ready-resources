@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/documentation",
   "requirement": "Core documentation should be searchable and linked from the resource's main page, and there should be a maintained way to get help.",
-  "requirementLevel": "should",
+  "requirementLevel": [
+    "should"
+  ],
   "howToAssess": "Starting from the main landing page, try to find the schema, data dictionary, release notes, licence, help contact and service status.",
   "assessmentObjectLabel": "Documentation/support",
   "assessmentObject": [

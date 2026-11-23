@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/provenance",
   "requirement": "Each release must have a unique identifier, a date and a change history that separates schema changes, content changes and corrections.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Compare consecutive releases with the published change log. Check version fields and migration notes.",
   "assessmentObjectLabel": "Release/resource",
   "assessmentObject": [

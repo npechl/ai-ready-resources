@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/documentation",
   "requirement": "Documentation must state which resource/interface versions it describes, and keep a history of its changes.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Compare current and past documentation with the releases. Test links to versions and archived pages.",
   "assessmentObjectLabel": "Documentation set",
   "assessmentObject": [

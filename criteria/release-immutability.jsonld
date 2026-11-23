@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/provenance",
   "requirement": "Published releases must not change. If a file must be changed under the same identifier, the change must be detectable and follow a defined process.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Retrieve stored copies/manifests of past releases. Compare checksums and the revision history.",
   "assessmentObjectLabel": "Release/files",
   "assessmentObject": [

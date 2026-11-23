@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-clarity",
   "requirement": "Derived (calculated) fields must state their inputs, method, parameters and how to interpret the result.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Pick a sample of derived fields. Check that their meaning and calculation can be worked out from the documentation and provenance.",
   "assessmentObjectLabel": "Derived fields",
   "assessmentObject": [

@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/quality",
   "requirement": "The data must be checked for how well it covers the population or cases that the declared AI use case targets.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Compare what the dataset contains with what the use case needs, e.g. by organism, assay, geography, time, phenotype or evidence type.",
   "assessmentObjectLabel": "Dataset/release",
   "assessmentObject": [

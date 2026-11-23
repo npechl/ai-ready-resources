@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/infrastructure",
   "requirement": "For production processing, the software versions, reference datasets and settings used must be recorded.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Rebuild one typical processing step using only the recorded environment and reference data.",
   "assessmentObjectLabel": "Runtime/dependencies",
   "assessmentObject": [

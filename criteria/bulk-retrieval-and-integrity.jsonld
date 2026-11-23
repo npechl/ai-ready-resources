@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/accessibility",
   "requirement": "Bulk downloads must let users retrieve the complete release and check that the files arrived intact.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Download a release on a clean machine. Compare the file list, file sizes and checksums with the release manifest/metadata.",
   "assessmentObjectLabel": "Files/release",
   "assessmentObject": [

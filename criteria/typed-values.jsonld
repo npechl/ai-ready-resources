@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/machine-actionability",
   "requirement": "Values must have stable datatypes and a structured form, so software does not have to extract them from text written for people.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Review the schema and a sample of records for dates, numbers, true/false values, lists, identifiers and coded values.",
   "assessmentObjectLabel": "Fields",
   "assessmentObject": [

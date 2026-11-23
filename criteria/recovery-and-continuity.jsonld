@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/infrastructure",
   "requirement": "Critical data and metadata must have a defined and tested procedure for backup, restore or rebuild.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Review the recovery targets. Restore or rebuild one typical release/component and compare the result with the targets.",
   "assessmentObjectLabel": "Storage/service",
   "assessmentObject": [

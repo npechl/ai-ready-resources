@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/quality",
   "requirement": "Duplicate entities and conflicting values should be found and handled using documented rules.",
-  "requirementLevel": "should",
+  "requirementLevel": [
+    "should"
+  ],
   "howToAssess": "Run exact and domain-specific duplicate checks. Look at a sample of conflicts and check how they were resolved.",
   "assessmentObjectLabel": "Entities/records",
   "assessmentObject": [

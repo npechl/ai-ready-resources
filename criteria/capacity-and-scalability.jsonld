@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/infrastructure",
   "requirement": "Capacity limits and how the system copes with growth should be measured against the expected data volume and automated use.",
-  "requirementLevel": "should",
+  "requirementLevel": [
+    "should"
+  ],
   "howToAssess": "Run or review load tests based on stated assumptions about data volume and parallel users. Look for bottlenecks and spare capacity.",
   "assessmentObjectLabel": "Service/pipeline",
   "assessmentObject": [

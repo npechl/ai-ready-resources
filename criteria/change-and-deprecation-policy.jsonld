@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/documentation",
   "requirement": "Changes that break existing use, and the retirement of features, must follow a published process with advance notice and guidance on how to switch.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Review the policy. Check a sample of past breaking changes: was notice given, was the old version supported for the promised time, and was a migration guide published?",
   "assessmentObjectLabel": "Schema/API",
   "assessmentObject": [

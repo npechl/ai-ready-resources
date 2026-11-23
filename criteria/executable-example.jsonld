@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/documentation",
   "requirement": "Documentation must include a small working example for each main access route. At least one example must show the whole automated process: finding the data, downloading it, validating it and recording its version.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Run each example on a clean, supported setup using the current release. It must work without any manual steps that are not documented.",
   "assessmentObjectLabel": "Resource/interface",
   "assessmentObject": [

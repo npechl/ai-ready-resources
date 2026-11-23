@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/machine-actionability",
   "requirement": "Software using the data must be able to tell which release and which schema version it received.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Check manifests, HTTP headers and response content for release and schema versions, and follow any linked metadata.",
   "assessmentObjectLabel": "Files/API payloads",
   "assessmentObject": [

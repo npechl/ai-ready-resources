@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-clarity",
   "requirement": "Where it changes how the data should be read, it must be possible to tell apart values that are missing, unknown, not applicable, withheld or a real zero.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Check the schema and a sample of records for each allowed kind of missing value.",
   "assessmentObjectLabel": "Fields",
   "assessmentObject": [

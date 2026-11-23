@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/governance-legal-and-ethics",
   "requirement": "Obligations to keep, withdraw, correct and delete data must be documented and carried out everywhere the data appears, including derived data and caches where relevant.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Follow a real or test withdrawal/correction through public access, search indexes, derived data and audit logs.",
   "assessmentObjectLabel": "Data lifecycle",
   "assessmentObject": [

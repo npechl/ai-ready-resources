@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-clarity",
   "requirement": "Every public field must have a definition that software can read.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Compare the list of fields in the schema with the data dictionary. Flag fields with missing or duplicate definitions.",
   "assessmentObjectLabel": "Fields",
   "assessmentObject": [

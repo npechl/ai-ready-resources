@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-interoperability",
   "requirement": "Where a relevant community standard exists, the resource should provide data in that standard, or a documented mapping to it, and describe how closely it follows it.",
-  "requirementLevel": "should",
+  "requirementLevel": [
+    "should"
+  ],
   "howToAssess": "Identify the relevant standards. Run any available validators. Document where the resource differs from or extends the standard.",
   "assessmentObjectLabel": "Resource/export",
   "assessmentObject": [

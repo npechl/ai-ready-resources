@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/machine-actionability",
   "requirement": "Paging, filtering and sorting must always give the same results for the same request, and must be documented, so software can reliably go through all records.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Download the full result set several times. Check the first and last pages, the default sort order, what happens when data changes during the download, and how cursors behave.",
   "assessmentObjectLabel": "API",
   "assessmentObject": [

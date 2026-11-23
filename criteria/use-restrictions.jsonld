@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/governance-legal-and-ethics",
   "requirement": "Uses that are allowed, not allowed or allowed under conditions must be documented, and readable by software where automated use depends on them.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Compare the machine-readable codes with the policy they come from and with actual access decisions. Test typical records.",
   "assessmentObjectLabel": "Dataset/records",
   "assessmentObject": [

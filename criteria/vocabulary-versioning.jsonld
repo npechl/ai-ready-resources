@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/semantic-interoperability",
   "requirement": "Every vocabulary and ontology the resource depends on must be identified by an identifier that can be looked up, plus a version/date.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Check schemas, manifests and mappings for vocabulary versions, and confirm that each declared version can be found.",
   "assessmentObjectLabel": "Vocabularies/ontologies",
   "assessmentObject": [

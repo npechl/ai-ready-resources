@@ -15,7 +15,9 @@
   "inScheme": "scheme",
   "principle": "principle/provenance",
   "requirement": "Every imported value or claim must record where it came from, as precisely as is practical.",
-  "requirementLevel": "must",
+  "requirementLevel": [
+    "must"
+  ],
   "howToAssess": "Take sample records from each type of source. Trace each value back to its source record, publication or submission.",
   "assessmentObjectLabel": "Records/assertions",
   "assessmentObject": [
