@@ -10,7 +10,7 @@
       "id": "scheme",
       "type": "skos:ConceptScheme",
       "name": "EMBL-EBI AI-readiness assessment criteria",
-      "hasCriterion": [
+      "hasTopConcept": [
         "criterion/validation",
         "criterion/completeness",
         "criterion/duplicates",

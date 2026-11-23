@@ -22,7 +22,13 @@
       "@type": "@id"
     },
     "requirement": "skos:definition",
-    "requirementLevel": "air:requirementLevel",
+    "requirementLevel": {
+      "@id": "air:requirementLevel",
+      "@type": "@vocab",
+      "@container": "@set"
+    },
+    "must": "air:Must",
+    "should": "air:Should",
     "howToAssess": "air:howToAssess",
     "assessmentObject": {
       "@id": "air:assessmentObject",
@@ -39,7 +45,7 @@
     "applicability": "air:applicability",
     "evidence": {
       "@id": "air:evidence",
-      "@container": "@list"
+      "@container": "@set"
     },
     "sharesEvidenceWith": {
       "@id": "air:sharesEvidenceWith",
