@@ -13,7 +13,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "website"
-LEVEL = {"must": "MUST", "should": "SHOULD", "must/should": "MUST / SHOULD"}
+def level(c):
+    return " / ".join(l.upper() for l in c.get("requirementLevel", []))
 
 
 def load(folder):
@@ -45,7 +46,7 @@ def main():
     # Scheme order, not alphabetical: it matches the source spreadsheet.
     p_order = schemes["principles"]["hasTopConcept"]
     o_order = schemes["assessment-objects"]["hasTopConcept"]
-    c_order = schemes["scheme"]["hasCriterion"]
+    c_order = schemes["scheme"]["hasTopConcept"]
 
     def link(iri, prefix="../"):
         folder = {"criterion": "criteria", "principle": "principles", "object": "objects"}[iri.split("/")[0]]
@@ -60,7 +61,7 @@ def main():
         lines = [
             f"# {c['name']}",
             "",
-            f"**{LEVEL[c['requirementLevel']]}** · Principle: {link(c['principle'])} · "
+            f"**{level(c)}** · Principle: {link(c['principle'])} · "
             f"Assess: {c['assessmentFrequency']}",
             "",
             "## Requirement", "", c["requirement"], "",
@@ -88,7 +89,7 @@ def main():
     for iri in c_order:
         c = criteria[iri]
         rows.append(
-            f"| [{c['name']}]({slug(iri)}.md) | {link(c['principle'])} | {LEVEL[c['requirementLevel']]} "
+            f"| [{c['name']}]({slug(iri)}.md) | {link(c['principle'])} | {level(c)} "
             f"| {cell(c['assessmentObjectLabel'])} | {cell(c['assessmentFrequency'])} |"
         )
     write(OUT / "criteria/index.md", [
@@ -103,7 +104,7 @@ def main():
         lines = [f"# {p['name']}", "", "| Criterion | Level | Requirement |", "|---|---|---|"]
         for ci in p["hasCriterion"]:
             c = criteria[ci]
-            lines.append(f"| {link(ci)} | {LEVEL[c['requirementLevel']]} | {cell(c['requirement'])} |")
+            lines.append(f"| {link(ci)} | {level(c)} | {cell(c['requirement'])} |")
         write(OUT / "principles" / f"{slug(iri)}.md", lines)
     write(OUT / "principles/index.md", [
         "# Principles", "", "| Principle | Criteria |", "|---|---|",
@@ -119,7 +120,7 @@ def main():
         ]
         for ci in o["assessedBy"]:
             c = criteria[ci]
-            lines.append(f"| {link(ci)} | {link(c['principle'])} | {LEVEL[c['requirementLevel']]} |")
+            lines.append(f"| {link(ci)} | {link(c['principle'])} | {level(c)} |")
         write(OUT / "objects" / f"{slug(iri)}.md", lines)
     write(OUT / "objects/index.md", [
         "# Assessment objects", "",

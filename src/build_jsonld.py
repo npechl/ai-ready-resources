@@ -95,14 +95,16 @@ CONTEXT = {
         "inScheme": {"@id": "skos:inScheme", "@type": "@id"},
         "principle": {"@id": "dqv:inDimension", "@type": "@id"},
         "requirement": "skos:definition",
-        "requirementLevel": "air:requirementLevel",
+        "requirementLevel": {"@id": "air:requirementLevel", "@type": "@vocab", "@container": "@set"},
+        "must": "air:Must",
+        "should": "air:Should",
         "howToAssess": "air:howToAssess",
         "assessmentObject": {"@id": "air:assessmentObject", "@type": "@id", "@container": "@set"},
         "assessedBy": {"@reverse": "air:assessmentObject", "@type": "@id", "@container": "@set"},
         "assessmentObjectLabel": "air:assessmentObjectLabel",
         "exampleScope": "air:exampleScope",
         "applicability": "air:applicability",
-        "evidence": {"@id": "air:evidence", "@container": "@list"},
+        "evidence": {"@id": "air:evidence", "@container": "@set"},
         "sharesEvidenceWith": {"@id": "air:sharesEvidenceWith", "@type": "@id", "@container": "@set"},
         "assessmentFrequency": "air:assessmentFrequency",
         "relatedStandard": {"@id": "air:relatedStandard", "@container": "@set"},
@@ -143,7 +145,7 @@ def requirement_level(text):
     # Ignore descriptive "should" ("how the value should be read", "should not be used for").
     t = re.sub(r"should (not )?be (read|used)", "", text.lower())
     must, should = bool(re.search(r"\bmust\b", t)), bool(re.search(r"\bshould\b", t))
-    return "must" if must and not should else "should" if should and not must else "must/should" if must else None
+    return ["must"] * must + ["should"] * should
 
 
 def split_examples(text):
@@ -257,7 +259,7 @@ def main():
                 "id": CRITERIA_SCHEME,
                 "type": "skos:ConceptScheme",
                 "name": "EMBL-EBI AI-readiness assessment criteria",
-                "hasCriterion": [c for p in principles.values() for c in p["criteria"]],
+                "hasTopConcept": [c for p in principles.values() for c in p["criteria"]],
             },
             {
                 "id": PRINCIPLES_SCHEME,
