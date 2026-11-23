@@ -10,8 +10,15 @@ Requires Python 3 and Zensical (`pip install zensical`).
 ```sh
 # python3 src/build_jsonld.py   # data/*.txt to JSON-LD (criteria/, principles/, assessment-objects/, schemas/)
 # python3 src/build_site.py     # JSON-LD to website/ Markdown pages
-zensical serve                # local preview at http://localhost:8000
-zensical build                # static site in site/ (deploy that folder, e.g. to GitHub Pages)
+
+# Download the repo
+git clone https://github.com/npechl/ai-ready-resources.git
+
+# local preview at http://localhost:8000
+zensical serve                
+
+# static site in site/ (deploy that folder, e.g. to GitHub Pages)
+zensical build                
 ```
 
 The JSON-LD identifiers use a placeholder namespace (`https://example.org/embl-ebi/ai-readiness/`);
